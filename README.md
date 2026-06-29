@@ -72,6 +72,7 @@ cat /opt/docker-mailserver/mail-config/opendkim/keys/YOUR-DOMAIN.XYZ/mail.txt
 ##
   
 Log into Porkbun and create a **TXT** record with the name `mail._domainkey.YOUR-DOMAIN.XYZ` pointing to that string.
+
 2. **Open Port 25**: DigitalOcean blocks outbound port 25 by default to prevent spam. You must open a support ticket with DigitalOcean requesting them to unblock outbound port 25 for your droplet so you can send emails to external providers (receiving works immediately).
 
 ##
